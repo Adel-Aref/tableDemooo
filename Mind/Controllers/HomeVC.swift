@@ -42,8 +42,21 @@ class HomeVC: UIViewController {
     // MARK :- search action
     
     @IBAction func btnSearchPressed(_ sender: Any) {
-        
+        let parms :[String:Any] = ["ConnectionString":"/qtBt0CAtOWO0Jk+l+glyJi1T56BKbfxyjfRyB5x0d5L0lGv2wrymieIlPbw903HgY7wFTKfeJi8KCcyPGat8/GSsj+d19TVOTep2LlBqNv/zIDJgSEQ0+5zshoRnSTZN7LMbg7PKuskLc8CvJplR9fbqm9853SewiVwc8Ryazcfdr/l4IuUJ0AICqdXxwq1gUd8FdJ1LbDfYfel6Tgw0uCeN4f3lvogUFG/N3mwryU=",
+                                   "From_date":"2018-01-01",
+                                   "To_date":"2018-12-01",
+                                   "E_name":"null",
+                                   "Limit":5,
+                                   "qty": 1
+            
+        ]
+        OrganizationRequest.getReportsDetails(myParameters: parms){ (success, error, organiztions) in
+            
+            if success {
+                print("Organizations \(organiztions)")
+            }
     }
     
 }
 
+}

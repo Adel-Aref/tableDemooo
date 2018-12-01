@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		21A7684956B4CD6EA806E43F /* Pods_Mind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 774176FDCD83504349FB56B3 /* Pods_Mind.framework */; };
 		F55A44E321B2AE7B005FDE7C /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55A44E221B2AE7B005FDE7C /* Urls.swift */; };
-		F55A44E521B2AF3D005FDE7C /* ReportRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55A44E421B2AF3D005FDE7C /* ReportRequest.swift */; };
+		F55A44E521B2AF3D005FDE7C /* OrganizationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55A44E421B2AF3D005FDE7C /* OrganizationRequest.swift */; };
 		F55A44E721B2AF4E005FDE7C /* OrginzationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55A44E621B2AF4E005FDE7C /* OrginzationModel.swift */; };
 		F55A44EA21B2B263005FDE7C /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55A44E921B2B263005FDE7C /* LoginVC.swift */; };
 		F55A44EC21B2B4D4005FDE7C /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55A44EB21B2B4D4005FDE7C /* LoginRequest.swift */; };
@@ -34,7 +34,7 @@
 		89E68A84B2BCF52462428B60 /* Pods-Mind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mind.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mind/Pods-Mind.debug.xcconfig"; sourceTree = "<group>"; };
 		D5D50B5DAD91A1CEC9D5B496 /* Pods-Mind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mind.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mind/Pods-Mind.release.xcconfig"; sourceTree = "<group>"; };
 		F55A44E221B2AE7B005FDE7C /* Urls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
-		F55A44E421B2AF3D005FDE7C /* ReportRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportRequest.swift; sourceTree = "<group>"; };
+		F55A44E421B2AF3D005FDE7C /* OrganizationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrganizationRequest.swift; sourceTree = "<group>"; };
 		F55A44E621B2AF4E005FDE7C /* OrginzationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrginzationModel.swift; sourceTree = "<group>"; };
 		F55A44E921B2B263005FDE7C /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		F55A44EB21B2B4D4005FDE7C /* LoginRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				F55A44EB21B2B4D4005FDE7C /* LoginRequest.swift */,
-				F55A44E421B2AF3D005FDE7C /* ReportRequest.swift */,
+				F55A44E421B2AF3D005FDE7C /* OrganizationRequest.swift */,
 				F55A44E221B2AE7B005FDE7C /* Urls.swift */,
 			);
 			path = ApiManager;
@@ -272,7 +272,7 @@
 			files = (
 				F55A44EE21B2DE04005FDE7C /* Earns.swift in Sources */,
 				F5FCEB9321AEDBC800CAE104 /* Mind.xcdatamodeld in Sources */,
-				F55A44E521B2AF3D005FDE7C /* ReportRequest.swift in Sources */,
+				F55A44E521B2AF3D005FDE7C /* OrganizationRequest.swift in Sources */,
 				F55A44F421B2DF5B005FDE7C /* Money.swift in Sources */,
 				F55A44FA21B2E220005FDE7C /* Time.swift in Sources */,
 				F55A44EA21B2B263005FDE7C /* LoginVC.swift in Sources */,
@@ -433,7 +433,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2C5GA3P469;
+				DEVELOPMENT_TEAM = A4BVWVM4Y6;
 				INFOPLIST_FILE = Mind/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -453,7 +453,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2C5GA3P469;
+				DEVELOPMENT_TEAM = A4BVWVM4Y6;
 				INFOPLIST_FILE = Mind/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
