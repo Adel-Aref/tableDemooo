@@ -8,17 +8,24 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeVC: UIViewController {
     @IBOutlet weak var firstView: ANCustomView!
     
     @IBOutlet weak var viewdateApperrance: UIView!
+    var connectionString :[String:String] = [:]
+    weak var delegate:PizzaDelegate?
+    var lgvc = LoginVC()
     
-    let path = UIBezierPath()
     override func viewDidLoad() {
         super.viewDidLoad()
-//        path.addLine(to: CGPoint(x: firstView.frame.size.width, y: firstView.frame.size.height))
-//        path.close()
-//        firstView.layer.shadowPath = path.cgPath
+         print("my connection string \(connectionString)")
+        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        lgvc.pass(){ (sucess, error, connString) in
+            self.connectionString = connString
+           
+        }
     }
 // MARK :- date from  Action
     @IBAction func dateFromPressed(_ sender: Any) {
@@ -31,6 +38,11 @@ class ViewController: UIViewController {
     // MARK :- Done Action
     @IBAction func DateSelectedPressed(_ sender: Any) {
         viewdateApperrance.isHidden = true
+    }
+    // MARK :- search action
+    
+    @IBAction func btnSearchPressed(_ sender: Any) {
+        
     }
     
 }
