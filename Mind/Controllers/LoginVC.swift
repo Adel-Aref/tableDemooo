@@ -23,25 +23,27 @@ class LoginVC: UIViewController ,PizzaDelegate{
     }
     
     @IBAction func btnLoginPressed(_ sender: Any) {
-        if txtPass.text != nil && txtPass.text != "" && txtPhoneNumber.text != nil && txtPhoneNumber.text != ""{
-            LoginRequest.login(phone: txtPhoneNumber.text!, password: txtPass.text!){ (sucess, error, connectioString) in
-                if sucess{
-                  
-                    self.connString = connectioString
-                    print("Counnnnn \(self.connString)")
-                    
-                    let myVC = self.storyboard?.instantiateViewController(withIdentifier: "toHomeVC") as! HomeVC
-                    myVC.connectionString = connectioString
-                    self.present(myVC, animated: true, completion: nil)
-
-                    
-                }
-                else{
-                    print("error happened \(error)")
-                }
-         
-            }
-        }
+//        if txtPass.text != nil && txtPass.text != "" && txtPhoneNumber.text != nil && txtPhoneNumber.text != ""{
+//            LoginRequest.login(phone: txtPhoneNumber.text!, password: txtPass.text!){ (sucess, error, connectioString) in
+//                if sucess{
+//
+//                    self.connString = connectioString
+//                    print("Counnnnn \(self.connString)")
+//
+//                    let myVC = self.storyboard?.instantiateViewController(withIdentifier: "toHomeVC") as! HomeVC
+//                    myVC.connectionString = connectioString
+//                    self.present(myVC, animated: true, completion: nil)
+//
+//
+//                }
+//                else{
+//                    print("error happened \(error)")
+//                }
+//
+//            }
+//        }
+        let myVC = self.storyboard?.instantiateViewController(withIdentifier: "toHomeVC") as! HomeVC
+        self.present(myVC, animated: true, completion: nil)
        // End of action
     }
      public func pass(completion:@escaping(_ success:Bool , _ error:String?,_ connString:[String:String])-> Void){

@@ -14,8 +14,7 @@ import Foundation
     //
     static var getSammery:String = "http://mindit-001-site2.atempurl.com/api/Summary/Get_Summary"
    
-    static var getSotreUrl:String = "http://mindit-001-site2.atempurl.com/api/Store/Get_Store"
-   static var getReportDetailsUrl:String = "http://mindit-001-site2.atempurl.com/Help/Api/POST-api-Report_Money-Get_Report_Money"
+   
 //////
     
 
